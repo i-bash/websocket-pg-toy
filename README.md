@@ -8,11 +8,10 @@ npm install
 ```
 
 3. Start WebSocket server in terminal
-single start
 ```
 ./server.js
 ```
-or infinite loop (the server will be restarted after completion, useful for debugging)
+or run it in infinite loop (useful for debugging)
 ```
 ./ws-server
 ```
