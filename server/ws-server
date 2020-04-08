@@ -1,0 +1,9 @@
+#!/bin/bash
+
+while true
+do
+    echo
+    echo '===== [re]starting ws server =============================='
+    echo
+    ./server.js
+done

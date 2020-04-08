@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
+	<title>websocket proof of concept</title>
+</head>
+<body>
+	<table cellpadding="30">
+		<tr>
+			<td valign="top">
+				<div>
+					<input type="checkbox" id="connected">
+					<button id="ws-stop">Stop server</button>
+					<button id="ws-connect">Connect ws</button>
+					<button id="ws-disconnect">Disconnect ws</button>
+				</div>
+				<hr>
+				<div>
+					<input type="text" id="connect-string" size="50" value="postgresql://postgres@/bookstore2">
+					<br>
+					<button id="connect">Pg connect</button>
+					<button id="disconnect">Pg disconnect</button>
+				</div>
+				<hr>
+				<textarea id="sql" rows="10" cols="40">select 2*2</textarea>
+				<div>
+					<button id="run">Exec sql</button>
+				</div>
+			</td>
+			<td valign="top">
+				<div id="log"></div>
+			</td>
+		</tr>
+	</table>
+	<script src="lib/jquery-3.4.1.min.js"></script>
+	<script src="lib/popper.min.js"></script>
+	<script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	<script src = "client.js"></script>
+</body>
+</html>
